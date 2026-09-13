@@ -88,3 +88,49 @@ MLLM/VLM에 들어가는 많은 시각 토큰 중 일부만 남겨 추론 비용
 
 ### 4. KV cache 압축: 캐시 단계에서 시각 토큰 줄이기
 - [ ] VL-Cache (2024, ICLR 2025) · arXiv:2410.23317
+
+## Medical VLM Hallucination 계보
+
+의료 VLM이 이미지 근거 없이 그럴듯한 답이나 판독문을 만들어 내는 환각(hallucination)을 측정·탐지·완화하는 연구 흐름.
+리뷰 순서는 위에서 아래로, 갈래별로 근본 논문 → 파생 논문 순이다.
+
+### 1. 평가·벤치마크: 의료 VLM 환각을 정의하고 측정
+- [ ] Med-HallMark (2024) · arXiv:2406.10185
+- [ ] ProbMed: Worse than Random? (2024, ACL 2025 Findings) · arXiv:2405.20421
+- [ ] MedHEval (2025) · arXiv:2503.02157
+- [ ] HEAL-MedVQA / LobA (2025, IJCAI 2025) · arXiv:2505.00744
+
+### 2. 환각 탐지: 불확실성·검증으로 환각 응답을 걸러냄
+- [ ] RadFlag (2024, ML4H 2024) · arXiv:2411.00299
+- [ ] VASE (2025, MICCAI 2025) · arXiv:2503.20504
+- [ ] VIHD (2026, MICCAI 2026) · arXiv:2605.20772
+- [ ] CoEV (2026, MICCAI 2026) · arXiv:2606.18609
+
+### 3. 학습 없는 디코딩 개입: 추론 시 시각 근거 쪽으로 출력을 교정
+- [ ] VCD (2023, CVPR 2024) · arXiv:2311.16922
+- [ ] Expert-CFG (2025, ICCV 2025) · arXiv:2507.09209
+- [ ] CCD (2025, ACL 2026 Findings) · arXiv:2509.23379
+- [ ] Med-VCD (2025, Computers in Biology and Medicine 2026) · arXiv:2512.01922
+- [x] ARCD (2025, AAAI 2026) · arXiv:2512.17189 · [리뷰](https://hyunjikim12.github.io/paper-review/posts/2512.17189/)
+- [ ] CAST (2026, MICCAI 2026) · arXiv:2608.17427
+
+### 4. 검색 증강(RAG): 외부 지식으로 사실성 보강
+- [ ] RULE (2024, EMNLP 2024) · arXiv:2407.05131
+- [ ] FactMM-RAG (2024, NAACL 2025) · arXiv:2407.15268
+- [ ] MMed-RAG (2024, ICLR 2025) · arXiv:2410.13085
+- [ ] HeteroRAG (2025, ACL 2026 Findings) · arXiv:2508.12778
+
+### 5. 선호 최적화·강화학습: 환각 응답을 덜 선호하도록 정렬
+- [ ] DPO for Suppressing Hallucinated Prior Exams (2024, MLHC 2024) · arXiv:2406.06496
+- [ ] MMedPO (2024, ICML 2025) · arXiv:2412.06141
+- [ ] CheXalign (2024, ACL 2025) · arXiv:2410.07025
+- [ ] Benchmarking DPO for Medical LVLMs (2026, EACL 2026 Findings) · arXiv:2601.17918
+
+### 6. 시각 근거 기반 생성·교정: 소견을 이미지 영역에 연결
+- [ ] MAIRA-2 (2024) · arXiv:2406.04449
+- [ ] FactCheXcker (2024, CVPR 2025) · arXiv:2411.18672
+- [ ] Phrase-grounded Fact-checking for Chest X-ray Reports (2025, MICCAI 2025) · arXiv:2509.21356
+
+### 7. 멀티에이전트 검증: 에이전트 간 반박·검증으로 진단 환각 억제
+- [ ] MedMMV (2025) · arXiv:2509.24314
+- [ ] Dialectic-Med (2026, ACL 2026 Findings) · arXiv:2604.11258
