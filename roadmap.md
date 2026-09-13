@@ -64,3 +64,27 @@ LLM 에이전트들이 텍스트 대신 hidden state·KV cache 같은 잠재 표
 ### 7. 잠재 통신의 안전성
 - [ ] LCGuard (2026) · arXiv:2605.22786
 - [ ] When Latent Agents Lie: KV-Cache Integrity (2026) · arXiv:2606.28958
+
+## Visual Token Pruning 계보
+
+MLLM/VLM에 들어가는 많은 시각 토큰 중 일부만 남겨 추론 비용을 줄이는 연구 흐름.
+리뷰 순서는 위에서 아래로, 갈래별로 근본 논문 → 파생 논문 순이다.
+
+### 1. 어텐션 기반 중요도 선택: 어텐션 점수로 남길 토큰을 고름
+- [x] FastV (2024, ECCV 2024) · arXiv:2403.06764 · [리뷰](https://hyunjikim12.github.io/paper-review/posts/2403.06764/)
+- [ ] SparseVLM (2024, ICML 2025) · arXiv:2410.04417
+- [ ] VisionZip (2024, CVPR 2025) · arXiv:2412.04467
+
+### 2. 다양성·커버리지 기반 선택: 전체를 대표하는 토큰 부분집합 구성
+- [ ] DivPrune (2025, CVPR 2025) · arXiv:2503.02175
+- [ ] SCOPE (2025, NeurIPS 2025) · arXiv:2510.24214
+- [ ] MMTok (2025, ICLR 2026) · arXiv:2508.18264
+- [ ] EVTP-IVS (2025, WACV 2026) · arXiv:2508.11886
+- [ ] SCoRe (2026, CVPR 2026) · CVF Open Access
+- [ ] TOPS (2026) · arXiv:2606.27161
+
+### 3. Pruning 실패 분석: 어떤 과제에서 왜 무너지는가
+- [ ] Why and When Visual Token Pruning Fails? (2026, ECCV 2026) · arXiv:2604.12358
+
+### 4. KV cache 압축: 캐시 단계에서 시각 토큰 줄이기
+- [ ] VL-Cache (2024, ICLR 2025) · arXiv:2410.23317
