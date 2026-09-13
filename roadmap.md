@@ -108,6 +108,7 @@ MLLM/VLM에 들어가는 많은 시각 토큰 중 일부만 남겨 추론 비용
 
 ### 3. 학습 없는 디코딩 개입: 추론 시 시각 근거 쪽으로 출력을 교정
 - [ ] VCD (2023, CVPR 2024) · arXiv:2311.16922
+- [ ] Prompt Highlighter (2023, CVPR 2024) · arXiv:2312.04302
 - [ ] Expert-CFG (2025, ICCV 2025) · arXiv:2507.09209
 - [ ] CCD (2025, ACL 2026 Findings) · arXiv:2509.23379
 - [ ] Med-VCD (2025, Computers in Biology and Medicine 2026) · arXiv:2512.01922
