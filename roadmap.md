@@ -76,7 +76,7 @@ MLLM/VLM에 들어가는 많은 시각 토큰 중 일부만 남겨 추론 비용
 - [ ] VisionZip (2024, CVPR 2025) · arXiv:2412.04467
 
 ### 2. 다양성·커버리지 기반 선택: 전체를 대표하는 토큰 부분집합 구성
-- [ ] DivPrune (2025, CVPR 2025) · arXiv:2503.02175
+- [x] DivPrune (2025, CVPR 2025) · arXiv:2503.02175 · [리뷰](https://hyunjikim12.github.io/paper-review/posts/2503.02175/)
 - [ ] SCOPE (2025, NeurIPS 2025) · arXiv:2510.24214
 - [ ] MMTok (2025, ICLR 2026) · arXiv:2508.18264
 - [ ] EVTP-IVS (2025, WACV 2026) · arXiv:2508.11886
