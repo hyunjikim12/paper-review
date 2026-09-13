@@ -135,3 +135,31 @@ MLLM/VLM에 들어가는 많은 시각 토큰 중 일부만 남겨 추론 비용
 ### 7. 멀티에이전트 검증: 에이전트 간 반박·검증으로 진단 환각 억제
 - [ ] MedMMV (2025) · arXiv:2509.24314
 - [ ] Dialectic-Med (2026, ACL 2026 Findings) · arXiv:2604.11258
+
+## Missing Modality Latent Prediction 계보
+
+빠진 모달리티나 문맥을 입력 공간이 아니라 latent 공간에서 예측하고, 그 예측의 불확실성까지 다루는 연구 흐름.
+리뷰 순서는 위에서 아래로, 갈래별로 근본 논문 → 파생 논문 순이다.
+
+### 1. JEPA 근본: 입력 대신 latent를 예측
+- [ ] I-JEPA (2023, CVPR 2023) · arXiv:2301.08243
+- [ ] V-JEPA (2024) · arXiv:2404.08471
+- [ ] Var-JEPA (2026, ICML 2026) · arXiv:2603.20111
+
+### 2. Missing modality 기초: 빠진 모달리티의 복원과 우회
+- [ ] SMIL (2021, AAAI 2021) · arXiv:2103.05677
+- [ ] ShaSpec (2023, CVPR 2023) · arXiv:2307.14126
+- [ ] Deep Multimodal Learning with Missing Modality: A Survey (2024, TMLR) · arXiv:2409.07825
+
+### 3. 추론 가능한 정보와 고유 정보의 구분
+- [x] MUST (2026, CVPR 2026) · arXiv:2603.26071 · [리뷰](https://hyunjikim12.github.io/paper-review/posts/2603.26071/)
+
+### 4. Embedding 공간에서의 missing latent 예측
+- [ ] Missing Modality Prediction via Joint Embedding of Unimodal Models (2024, ECCV 2024) · arXiv:2407.12616
+- [ ] ProM3E (2025, CVPR 2026) · arXiv:2511.02946
+- [ ] Mol-JEPA (2026) · arXiv:2608.22642
+
+### 5. 불확실성을 판단과 정렬에 활용
+- [ ] 3WML-SMMs (2026, MDPI Information) · Information 17(4):384
+- [ ] CalMRL (2025, ICML 2026) · arXiv:2511.12034
+- [ ] EASE (2026, ACL 2026 Findings) · ACL Anthology 2026.findings-acl.260
