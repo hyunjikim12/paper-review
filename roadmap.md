@@ -84,7 +84,7 @@ MLLM/VLM에 들어가는 많은 시각 토큰 중 일부만 남겨 추론 비용
 - [ ] TOPS (2026) · arXiv:2606.27161
 
 ### 3. Pruning 실패 분석: 어떤 과제에서 왜 무너지는가
-- [ ] Why and When Visual Token Pruning Fails? (2026, ECCV 2026) · arXiv:2604.12358
+- [x] Why and When Visual Token Pruning Fails? (2026, ECCV 2026) · arXiv:2604.12358 · [리뷰](https://hyunjikim12.github.io/paper-review/posts/2604.12358/)
 
 ### 4. KV cache 압축: 캐시 단계에서 시각 토큰 줄이기
 - [ ] VL-Cache (2024, ICLR 2025) · arXiv:2410.23317
