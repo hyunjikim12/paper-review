@@ -40,7 +40,7 @@ LLM 에이전트들이 텍스트 대신 hidden state·KV cache 같은 잠재 표
 - [ ] Cache Merging as a Convergent Replicated State for Multi-Agent Latent Reasoning (2026) · arXiv:2607.01308
 
 ### 2. 이종·비전 모델로의 확장: VLM 시각 입력 경로를 잠재 통신 채널로 활용
-- [ ] The Vision Wormhole (2026) · arXiv:2602.15382
+- [x] The Vision Wormhole (2026) · arXiv:2602.15382 · [리뷰](https://hyunjikim12.github.io/paper-review/posts/2602.15382/)
 - [ ] Post-Hoc Sparse Coding of Latent Communication Between Vision-Language Model Agents (2026) · arXiv:2608.10198
 
 ### 3. 잠재 메모리: 에이전트별 경험을 압축된 잠재 표현으로 저장
