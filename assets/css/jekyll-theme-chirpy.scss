@@ -21,3 +21,37 @@
   text-overflow: ellipsis;
   min-width: 0;
 }
+
+/* 홈 글 카드 제목 아래 태그 칩 (앞 3개) */
+:root {
+  --post-card-tag-bg: #f0f0f0;
+  --post-card-tag-color: #5f5f5f;
+}
+
+:root[data-mode='dark'] {
+  --post-card-tag-bg: rgb(255 255 255 / 8%);
+  --post-card-tag-color: #a8a8a8;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-mode]) {
+    --post-card-tag-bg: rgb(255 255 255 / 8%);
+    --post-card-tag-color: #a8a8a8;
+  }
+}
+
+#post-list .post-card-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin: 0.25rem 0 0.9rem;
+}
+
+#post-list .post-card-tag {
+  padding: 0.2rem 0.7rem;
+  border-radius: 999px;
+  background: var(--post-card-tag-bg);
+  color: var(--post-card-tag-color);
+  font-size: 0.8rem;
+  line-height: 1.5;
+}

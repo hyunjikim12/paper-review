@@ -1,0 +1,12 @@
+# 홈 카드 태그 칩의 표시 이름.
+# 여기에 없는 태그는 하이픈을 띄어 쓰고 단어마다 첫 글자를 대문자로 바꿔 보인다
+# (latent-reasoning → Latent Reasoning). 약어나 하이픈을 살릴 태그만 적는다.
+
+multi-agent: Multi-Agent
+training-free: Training-Free
+whole-slide-image: Whole-Slide Image
+vision-language-model: Vision-Language Model
+llm-agent: LLM Agent
+llm: LLM
+kv-cache: KV Cache
+vqa: VQA
