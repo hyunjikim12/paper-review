@@ -11,13 +11,13 @@ layout: default
 
 <nav id="lineage-tabs" aria-label="Lineage">
   <button type="button" class="lineage-tab active" data-lineage="all">
-    All <span class="lineage-count">{{ posts | size }}</span>
+    All
   </button>
   {% for lineage in site.data.lineages %}
     {% assign lineage_posts = posts | where_exp: 'item', 'item.categories contains lineage.slug' %}
     {% if lineage_posts.size > 0 %}
       <button type="button" class="lineage-tab" data-lineage="{{ lineage.slug }}">
-        {{ lineage.label }} <span class="lineage-count">{{ lineage_posts.size }}</span>
+        {{ lineage.label }}
       </button>
     {% endif %}
   {% endfor %}
