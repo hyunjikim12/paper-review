@@ -156,10 +156,9 @@ MLLM/VLM에 들어가는 많은 시각 토큰 중 일부만 남겨 추론 비용
 
 ### 4. Embedding 공간에서의 missing latent 예측
 - [ ] Missing Modality Prediction via Joint Embedding of Unimodal Models (2024, ECCV 2024) · arXiv:2407.12616
-- [ ] ProM3E (2025, CVPR 2026) · arXiv:2511.02946
+- [x] ProM3E (2025, CVPR 2026) · arXiv:2511.02946 · [리뷰](https://hyunjikim12.github.io/paper-review/posts/2511.02946/)
 - [ ] Mol-JEPA (2026) · arXiv:2608.22642
 
 ### 5. 불확실성을 판단과 정렬에 활용
-- [ ] 3WML-SMMs (2026, MDPI Information) · Information 17(4):384
 - [ ] CalMRL (2025, ICML 2026) · arXiv:2511.12034
 - [ ] EASE (2026, ACL 2026 Findings) · ACL Anthology 2026.findings-acl.260
