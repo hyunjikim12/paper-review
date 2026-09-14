@@ -4,7 +4,8 @@ layout: default
 
 {% include lang.html %}
 
-{%- comment -%} 계보 탭으로 거르기 위해 페이지를 나누지 않고 모든 글을 한 번에 보인다 (고정 글 먼저) {%- endcomment -%}
+{%- comment -%} 계보 탭으로 거르기 위해 페이지를 나누지 않고 모든 글을 한 번에 보인다 (고정 글 먼저).
+  글의 categories 두 번째 값과 front matter lineages 목록에 든 계보 탭에 모두 나타난다. {%- endcomment -%}
 {% assign all_pinned = site.posts | where: 'pin', 'true' %}
 {% assign all_normal = site.posts | where_exp: 'item', 'item.pin != true and item.hidden != true' %}
 {% assign posts = all_pinned | concat: all_normal %}
@@ -31,7 +32,9 @@ layout: default
       All
     </button>
     {% for lineage in site.data.lineages %}
-      {% assign lineage_posts = posts | where_exp: 'item', 'item.categories contains lineage.slug' %}
+      {% assign lineage_posts = posts
+        | where_exp: 'item', 'item.categories contains lineage.slug or item.lineages contains lineage.slug'
+      %}
       {% if lineage_posts.size > 0 %}
         <button type="button" class="lineage-tab" data-lineage="{{ lineage.slug }}">
           {{ lineage.label }}
@@ -46,7 +49,7 @@ layout: default
   {% for post in posts %}
     <article
       class="card-wrapper card"
-      data-lineage="{{ post.categories | join: ' ' }}"
+      data-lineage="{{ post.categories | join: ' ' }} {{ post.lineages | join: ' ' }}"
       data-date="{{ post.date | date: '%s' }}"
     >
       <a href="{{ post.url | relative_url }}" class="post-preview row g-0 flex-md-row-reverse">
