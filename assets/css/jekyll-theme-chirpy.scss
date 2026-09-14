@@ -22,6 +22,11 @@
   min-width: 0;
 }
 
+/* 글 상단의 "By 작성자" 줄은 숨기고 읽는 시간만 남김 */
+.post-meta > .d-flex > span:first-child {
+  display: none;
+}
+
 /* 홈 글 카드 제목 아래 태그 칩 (앞 3개) */
 :root {
   --post-card-tag-bg: #f0f0f0;
