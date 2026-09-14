@@ -3,6 +3,8 @@
 
 - slug: latent-multi-agent
   label: Multi-Agent
+- slug: self-evolving-agent-skills
+  label: Agent Skills
 - slug: visual-token-pruning
   label: Visual Token Pruning
 - slug: missing-modality-latent-prediction

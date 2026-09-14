@@ -162,3 +162,40 @@ MLLM/VLM에 들어가는 많은 시각 토큰 중 일부만 남겨 추론 비용
 ### 5. 불확실성을 판단과 정렬에 활용
 - [ ] CalMRL (2025, ICML 2026) · arXiv:2511.12034
 - [ ] EASE (2026, ACL 2026 Findings) · ACL Anthology 2026.findings-acl.260
+
+## Self-Evolving Agent Skills 계보
+
+에이전트의 모델 가중치는 고정하고, 스킬·프롬프트·문맥 같은 텍스트 상태를 경험으로 갱신해 성능을 올리는 연구 흐름.
+리뷰 순서는 위에서 아래로, 갈래별로 근본 논문 → 파생 논문 순이다.
+
+### 1. 경험에서 배우는 언어 에이전트: 반성과 스킬 라이브러리
+- [ ] Reflexion (2023, NeurIPS 2023) · arXiv:2303.11366
+- [ ] Self-Refine (2023, NeurIPS 2023) · arXiv:2303.17651
+- [ ] Voyager (2023, TMLR 2024) · arXiv:2305.16291
+
+### 2. 텍스트 공간 최적화: LLM이 프롬프트와 파이프라인을 최적화
+- [ ] OPRO (2023, ICLR 2024) · arXiv:2309.03409
+- [ ] DSPy (2023, ICLR 2024) · arXiv:2310.03714
+- [ ] TextGrad (2024, Nature 2025) · arXiv:2406.07496
+- [ ] GEPA (2025, ICLR 2026) · arXiv:2507.19457
+
+### 3. 에이전트 시스템과 문맥의 자동 진화
+- [ ] ADAS (2024, ICLR 2025) · arXiv:2408.08435
+- [ ] Agent Workflow Memory (2024, ICML 2025) · arXiv:2409.07429
+- [ ] ACE: Agentic Context Engineering (2025, ICLR 2026) · arXiv:2510.04618
+- [ ] EvoTest (2025, ICLR 2026) · arXiv:2510.13220
+
+### 4. 에이전트 스킬의 정의와 평가
+- [ ] SoK: Agentic Skills (2026) · arXiv:2602.20867
+- [ ] SkillsBench (2026) · arXiv:2602.12670
+
+### 5. 궤적 기반 스킬 구축과 진화
+- [ ] Memp (2025, ACL 2026 Findings) · arXiv:2508.06433
+- [ ] Trace2Skill (2026) · arXiv:2603.25158
+- [ ] EvoSkill (2026) · arXiv:2603.02766
+- [ ] CoEvoSkills (2026, COLM 2026) · arXiv:2604.01687
+- [x] SkillOpt (2026) · arXiv:2605.23904 · [리뷰](https://hyunjikim12.github.io/paper-review/posts/2605.23904/)
+
+### 6. 강화학습과 결합한 스킬 학습
+- [ ] SkillRL (2026) · arXiv:2602.08234
+- [ ] Skill-Pro (2026, ICML 2026) · arXiv:2602.01869

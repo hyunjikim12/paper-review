@@ -10,3 +10,5 @@ llm-agent: LLM Agent
 llm: LLM
 kv-cache: KV Cache
 vqa: VQA
+text-space-optimization: Text-Space Optimization
+self-evolving-agents: Self-Evolving Agents
