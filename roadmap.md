@@ -177,7 +177,7 @@ MLLM/VLM에 들어가는 많은 시각 토큰 중 일부만 남겨 추론 비용
 - [ ] OPRO (2023, ICLR 2024) · arXiv:2309.03409
 - [ ] DSPy (2023, ICLR 2024) · arXiv:2310.03714
 - [ ] TextGrad (2024, Nature 2025) · arXiv:2406.07496
-- [ ] GEPA (2025, ICLR 2026) · arXiv:2507.19457
+- [x] GEPA (2025, ICLR 2026) · arXiv:2507.19457 · [리뷰](https://hyunjikim12.github.io/paper-review/posts/2507.19457/)
 
 ### 3. 에이전트 시스템과 문맥의 자동 진화
 - [ ] ADAS (2024, ICLR 2025) · arXiv:2408.08435
