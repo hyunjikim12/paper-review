@@ -9,23 +9,46 @@ layout: default
 {% assign all_normal = site.posts | where_exp: 'item', 'item.pin != true and item.hidden != true' %}
 {% assign posts = all_pinned | concat: all_normal %}
 
-<nav id="lineage-tabs" aria-label="Lineage">
-  <button type="button" class="lineage-tab active" data-lineage="all">
-    All
-  </button>
-  {% for lineage in site.data.lineages %}
-    {% assign lineage_posts = posts | where_exp: 'item', 'item.categories contains lineage.slug' %}
-    {% if lineage_posts.size > 0 %}
-      <button type="button" class="lineage-tab" data-lineage="{{ lineage.slug }}">
-        {{ lineage.label }}
-      </button>
-    {% endif %}
-  {% endfor %}
-</nav>
+<section id="home-head">
+<header id="home-hero">
+  <div>
+    <h1 class="home-title">AI/ML Paper Reviews</h1>
+    <p class="home-tagline">Multimodal AI · Medical AI · Multi-Agent Systems · Trustworthy AI</p>
+  </div>
+
+  <label class="home-sort">
+    <span>Sort by:</span>
+    <select id="post-sort" aria-label="Sort posts">
+      <option value="recent">Recent</option>
+      <option value="oldest">Oldest</option>
+    </select>
+  </label>
+</header>
+
+<div id="home-toolbar">
+  <nav id="lineage-tabs" aria-label="Lineage">
+    <button type="button" class="lineage-tab active" data-lineage="all">
+      All
+    </button>
+    {% for lineage in site.data.lineages %}
+      {% assign lineage_posts = posts | where_exp: 'item', 'item.categories contains lineage.slug' %}
+      {% if lineage_posts.size > 0 %}
+        <button type="button" class="lineage-tab" data-lineage="{{ lineage.slug }}">
+          {{ lineage.label }}
+        </button>
+      {% endif %}
+    {% endfor %}
+  </nav>
+</div>
+</section>
 
 <div id="post-list" class="flex-grow-1 px-xl-1">
   {% for post in posts %}
-    <article class="card-wrapper card" data-lineage="{{ post.categories | join: ' ' }}">
+    <article
+      class="card-wrapper card"
+      data-lineage="{{ post.categories | join: ' ' }}"
+      data-date="{{ post.date | date: '%s' }}"
+    >
       <a href="{{ post.url | relative_url }}" class="post-preview row g-0 flex-md-row-reverse">
         {% assign card_body_col = '12' %}
 
@@ -135,5 +158,15 @@ layout: default
     }
     tabs.forEach((t) => t.addEventListener('click', () => select(t.dataset.lineage)));
     if (location.hash) select(decodeURIComponent(location.hash.slice(1)));
+
+    /* 정렬: Recent는 최신 글부터, Oldest는 오래된 글부터 */
+    const list = document.getElementById('post-list');
+    const sort = document.getElementById('post-sort');
+    sort.addEventListener('change', () => {
+      const dir = sort.value === 'oldest' ? 1 : -1;
+      [...cards]
+        .sort((a, b) => dir * (Number(a.dataset.date) - Number(b.dataset.date)))
+        .forEach((c) => list.appendChild(c));
+    });
   })();
 </script>

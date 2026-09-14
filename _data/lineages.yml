@@ -1,13 +1,13 @@
-# 홈 계보 탭의 순서와 이름. roadmap.md의 계보 순서와 맞추고, slug는 글 categories의 두 번째 값이다.
+# 홈 계보 탭의 순서와 이름. slug는 글 categories의 두 번째 값이고, 적힌 순서대로 탭이 놓인다.
 # 글이 하나도 없는 계보는 탭에 보이지 않는다.
 
-- slug: pathology-agent
-  label: Pathology Agent
 - slug: latent-multi-agent
-  label: Latent Multi-Agent
+  label: Multi-Agent
 - slug: visual-token-pruning
   label: Visual Token Pruning
-- slug: medical-vlm-hallucination
-  label: Medical VLM Hallucination
 - slug: missing-modality-latent-prediction
   label: Missing Modality
+- slug: medical-vlm-hallucination
+  label: Hallucination
+- slug: pathology-agent
+  label: Pathology
