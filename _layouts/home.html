@@ -4,51 +4,28 @@ layout: default
 
 {% include lang.html %}
 
+{%- comment -%} 계보 탭으로 거르기 위해 페이지를 나누지 않고 모든 글을 한 번에 보인다 (고정 글 먼저) {%- endcomment -%}
 {% assign all_pinned = site.posts | where: 'pin', 'true' %}
 {% assign all_normal = site.posts | where_exp: 'item', 'item.pin != true and item.hidden != true' %}
+{% assign posts = all_pinned | concat: all_normal %}
 
-{% assign posts = '' | split: '' %}
-
-<!-- Get pinned posts on current page -->
-
-{% assign visible_start = paginator.page | minus: 1 | times: paginator.per_page %}
-{% assign visible_end = visible_start | plus: paginator.per_page %}
-
-{% if all_pinned.size > visible_start %}
-  {% if all_pinned.size > visible_end %}
-    {% assign pinned_size = paginator.per_page %}
-  {% else %}
-    {% assign pinned_size = all_pinned.size | minus: visible_start %}
-  {% endif %}
-
-  {% for i in (visible_start..all_pinned.size) limit: pinned_size %}
-    {% assign posts = posts | push: all_pinned[i] %}
+<nav id="lineage-tabs" aria-label="Lineage">
+  <button type="button" class="lineage-tab active" data-lineage="all">
+    All <span class="lineage-count">{{ posts | size }}</span>
+  </button>
+  {% for lineage in site.data.lineages %}
+    {% assign lineage_posts = posts | where_exp: 'item', 'item.categories contains lineage.slug' %}
+    {% if lineage_posts.size > 0 %}
+      <button type="button" class="lineage-tab" data-lineage="{{ lineage.slug }}">
+        {{ lineage.label }} <span class="lineage-count">{{ lineage_posts.size }}</span>
+      </button>
+    {% endif %}
   {% endfor %}
-{% else %}
-  {% assign pinned_size = 0 %}
-{% endif %}
-
-<!-- Get normal posts on current page -->
-
-{% assign normal_size = paginator.posts | size | minus: pinned_size %}
-
-{% if normal_size > 0 %}
-  {% if pinned_size > 0 %}
-    {% assign normal_start = 0 %}
-  {% else %}
-    {% assign normal_start = visible_start | minus: all_pinned.size %}
-  {% endif %}
-
-  {% assign normal_end = normal_start | plus: normal_size | minus: 1 %}
-
-  {% for i in (normal_start..normal_end) %}
-    {% assign posts = posts | push: all_normal[i] %}
-  {% endfor %}
-{% endif %}
+</nav>
 
 <div id="post-list" class="flex-grow-1 px-xl-1">
   {% for post in posts %}
-    <article class="card-wrapper card">
+    <article class="card-wrapper card" data-lineage="{{ post.categories | join: ' ' }}">
       <a href="{{ post.url | relative_url }}" class="post-preview row g-0 flex-md-row-reverse">
         {% assign card_body_col = '12' %}
 
@@ -143,6 +120,20 @@ layout: default
 </div>
 <!-- #post-list -->
 
-{% if paginator.total_pages > 1 %}
-  {% include post-paginator.html %}
-{% endif %}
+<script>
+  /* 계보 탭: 누른 계보의 글만 보이고, 주소의 #계보명으로 선택 상태를 유지 */
+  (function () {
+    const tabs = document.querySelectorAll('#lineage-tabs .lineage-tab');
+    const cards = document.querySelectorAll('#post-list .card-wrapper');
+    function select(slug) {
+      if (![...tabs].some((t) => t.dataset.lineage === slug)) slug = 'all';
+      tabs.forEach((t) => t.classList.toggle('active', t.dataset.lineage === slug));
+      cards.forEach((c) => {
+        c.hidden = slug !== 'all' && !c.dataset.lineage.split(' ').includes(slug);
+      });
+      history.replaceState(null, '', slug === 'all' ? location.pathname : '#' + slug);
+    }
+    tabs.forEach((t) => t.addEventListener('click', () => select(t.dataset.lineage)));
+    if (location.hash) select(decodeURIComponent(location.hash.slice(1)));
+  })();
+</script>

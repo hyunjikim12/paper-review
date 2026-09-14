@@ -27,6 +27,58 @@
   display: none;
 }
 
+/* 홈 글 목록 위의 계보 탭 */
+#lineage-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 2rem;
+}
+
+.lineage-tab {
+  padding: 0.35rem 0.9rem;
+  border: 1px solid var(--tag-border);
+  border-radius: 999px;
+  background: var(--card-bg);
+  color: var(--text-muted-color);
+  font-size: 0.9rem;
+  line-height: 1.5;
+  white-space: nowrap;
+  transition:
+    border-color 0.15s ease,
+    color 0.15s ease;
+
+  &:hover {
+    border-color: var(--text-muted-color);
+    color: var(--heading-color);
+  }
+
+  &.active {
+    border-color: var(--heading-color);
+    background: var(--heading-color);
+    color: var(--card-bg);
+
+    .lineage-count {
+      color: var(--card-bg);
+      opacity: 0.75;
+    }
+  }
+
+  .lineage-count {
+    margin-left: 0.2rem;
+    color: var(--text-muted-color);
+    font-size: 0.8rem;
+  }
+}
+
+#lineage-tabs + #post-list {
+  margin-top: 1.5rem;
+}
+
+#post-list .card-wrapper[hidden] {
+  display: none !important;
+}
+
 /* 홈 글 카드 제목 아래 태그 칩 (앞 3개) */
 :root {
   --post-card-tag-bg: #f0f0f0;
