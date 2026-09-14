@@ -195,6 +195,7 @@ MLLM/VLM에 들어가는 많은 시각 토큰 중 일부만 남겨 추론 비용
 - [ ] EvoSkill (2026) · arXiv:2603.02766
 - [ ] CoEvoSkills (2026, COLM 2026) · arXiv:2604.01687
 - [x] SkillOpt (2026) · arXiv:2605.23904 · [리뷰](https://hyunjikim12.github.io/paper-review/posts/2605.23904/)
+- [x] Rethinking Self-Evolving Agents (OEO) (2026) · arXiv:2608.09629 · [리뷰](https://hyunjikim12.github.io/paper-review/posts/2608.09629/)
 
 ### 6. 강화학습과 결합한 스킬 학습
 - [ ] SkillRL (2026) · arXiv:2602.08234
