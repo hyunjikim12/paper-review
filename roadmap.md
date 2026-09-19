@@ -201,3 +201,42 @@ MLLM/VLM에 들어가는 많은 시각 토큰 중 일부만 남겨 추론 비용
 ### 6. 강화학습과 결합한 스킬 학습
 - [ ] SkillRL (2026) · arXiv:2602.08234
 - [ ] Skill-Pro (2026, ICML 2026) · arXiv:2602.01869
+
+## Imitation Gap 계보
+
+훈련 때만 쓸 수 있는 특권 정보(privileged information)를 가진 교사를 부분 관측 학생이
+모방할 때 생기는 imitation gap을 정의하고, 모방과 강화학습을 섞거나 교사를 학생에 맞춰
+학습해 그 간극을 메우는 연구 흐름.
+리뷰 순서는 위에서 아래로, 갈래별로 근본 논문 → 파생 논문 순이다.
+
+### 1. 특권 정보 활용의 근본: 비대칭 critic과 특권 교사 모방
+- [ ] Asymmetric Actor Critic for Image-Based Robot Learning (2017) · arXiv:1710.06542
+- [ ] Learning by Cheating (2019, CoRL 2019) · arXiv:1912.12294
+- [ ] Privileged Information Dropout in RL (2020) · arXiv:2005.09220
+
+### 2. Imitation gap의 정의와 모방·RL의 적응적 전환
+- [ ] ADVISOR: Bridging the Imitation Gap by Adaptive Insubordination (2020, NeurIPS 2021) · arXiv:2007.12173
+- [ ] A2D: Robust Asymmetric Learning in POMDPs (2020, ICML 2021) · arXiv:2012.15566
+- [ ] COSIL: Leveraging Fully Observable Policies for Learning under Partial Observability (2022, CoRL 2022) · arXiv:2211.01991
+- [ ] TGRL: Teacher Guided Reinforcement Learning (2023, ICML 2023) · arXiv:2307.03186
+
+### 3. 학생을 고려한 교사 학습: 교사와 학생의 공동 학습, 학생 중심 전문가 설계
+- [ ] SITT: Student-Informed Teacher Training (2024, ICLR 2025) · arXiv:2412.09149
+- [ ] GPO: Guided Policy Optimization under Partial Observability (2025, ICLR 2026) · arXiv:2505.15418
+- [ ] LEAD: Minimizing Learner-Expert Asymmetry in End-to-End Driving (2025, CVPR 2026) · arXiv:2512.20563
+- [ ] Teacher-Student Representational Alignment for RL-Driven Imitation Learning (2026, ICRA 2026 RL4IL Workshop) · arXiv:2605.28372
+
+### 4. 불확실성과 사전 정보로 간극 메우기
+- [ ] BIG: A Bayesian Solution To The Imitation Gap (2024, NeurIPS 2024) · arXiv:2407.00495
+- [ ] IGDrivSim: A Benchmark for the Imitation Gap in Autonomous Driving (2024) · arXiv:2411.04653
+
+### 5. 비대칭 RL의 이론과 확장: 특권 critic·모델·센서
+- [ ] Unbiased Asymmetric RL under Partial Observability (2021, AAMAS 2022) · arXiv:2105.11674
+- [ ] Learning in POMDPs is Sample-Efficient with Hindsight Observability (2023, ICML 2023) · arXiv:2301.13857
+- [ ] Scaffolder: Privileged Sensing Scaffolds RL (2024, ICLR 2024) · arXiv:2405.14853
+- [ ] Provable Partially Observable RL with Privileged Information (2024, NeurIPS 2024) · arXiv:2412.00985
+- [ ] PIGDreamer: Privileged Information Guided World Models (2025) · arXiv:2508.02159
+- [ ] Informed Asymmetric Actor-Critic (2025) · arXiv:2509.26000
+
+### 6. 언제 증류하고 언제 직접 배우는가
+- [ ] To Distill or Decide? (2025, NeurIPS 2025) · arXiv:2510.03207

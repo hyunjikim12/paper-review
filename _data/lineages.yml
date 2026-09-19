@@ -7,6 +7,8 @@
   label: Agent Skills
 - slug: visual-token-pruning
   label: Visual Token Pruning
+- slug: imitation-gap
+  label: Imitation Gap
 - slug: missing-modality-latent-prediction
   label: Missing Modality
 - slug: medical-vlm-hallucination
