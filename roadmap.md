@@ -202,6 +202,37 @@ MLLM/VLM에 들어가는 많은 시각 토큰 중 일부만 남겨 추론 비용
 - [ ] SkillRL (2026) · arXiv:2602.08234
 - [ ] Skill-Pro (2026, ICML 2026) · arXiv:2602.01869
 
+## JEPA World Model 계보
+
+픽셀을 복원하지 않고 latent 공간에서 미래 표현을 예측하는 JEPA를 행동 조건 세계 모델로 확장해,
+latent 안에서 계획하고 불확실성을 다루는 연구 흐름.
+리뷰 순서는 위에서 아래로, 갈래별로 근본 논문 → 파생 논문 순이다.
+
+### 1. Latent 계획의 근본: 사전학습 특징 위의 세계 모델과 JEPA 계획
+- [ ] DINO-WM (2024, ICML 2025) · arXiv:2411.04983
+- [ ] PLDM: Planning with Latent Dynamics Models (2025) · arXiv:2502.14819
+- [ ] V-JEPA 2 (2025) · arXiv:2506.09985
+- [ ] What Drives Success in Physical Planning with JEPA World Models? (2025, TMLR) · arXiv:2512.24497
+
+### 2. 픽셀에서 end-to-end로 안정 학습: 붕괴 없는 단일 목적 함수
+- [ ] LeJEPA (2025) · arXiv:2511.08544
+- [ ] LeWorldModel (2026) · arXiv:2603.19312
+- [ ] UniJEPA (2026) · arXiv:2608.07409
+
+### 3. 확률적·믿음 상태 JEPA: 미래 latent의 분포와 불확실성
+- [ ] VJEPA: Variational JEPA as Probabilistic World Models (2026) · arXiv:2601.14354
+- [x] UWM-JEPA (2026) · arXiv:2605.25313 · [리뷰](https://hyunjikim12.github.io/paper-review/posts/2605.25313/)
+- [ ] Branch-JEPA: Finite-Support Predictive Distributions (2026) · arXiv:2607.05238
+
+### 4. 행동 결합과 시험 시 적응: 예측기가 행동과 경험에 반응하게 만들기
+- [ ] Delta-JEPA: Action-Sensitive World Models via Latent Difference Decoding (2026) · arXiv:2606.31232
+- [ ] EPM-JEPA: Operator-Side Experience Modulation (2026) · arXiv:2606.12979
+
+### 5. 이론: JEPA 세계 모델이 무엇을 배우는가
+- [ ] When Does LeJEPA Learn a World Model? (2026) · arXiv:2605.26379
+- [ ] A Generalization Theory for JEPA-Based World Models (2026) · arXiv:2606.27014
+- [ ] UR-JEPA: Uniform Rectifiability as a Regularizer (2026) · arXiv:2606.01443
+
 ## Imitation Gap 계보
 
 훈련 때만 쓸 수 있는 특권 정보(privileged information)를 가진 교사를 부분 관측 학생이
