@@ -145,6 +145,7 @@ MLLM/VLM에 들어가는 많은 시각 토큰 중 일부만 남겨 추론 비용
 - [ ] I-JEPA (2023, CVPR 2023) · arXiv:2301.08243
 - [ ] V-JEPA (2024) · arXiv:2404.08471
 - [ ] Var-JEPA (2026, ICML 2026) · arXiv:2603.20111
+- [x] UWM-JEPA (2026) · arXiv:2605.25313 · [리뷰](https://hyunjikim12.github.io/paper-review/posts/2605.25313/)
 
 ### 2. Missing modality 기초: 빠진 모달리티의 복원과 우회
 - [ ] SMIL (2021, AAAI 2021) · arXiv:2103.05677
