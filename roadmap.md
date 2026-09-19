@@ -215,9 +215,10 @@ MLLM/VLM에 들어가는 많은 시각 토큰 중 일부만 남겨 추론 비용
 - [ ] Privileged Information Dropout in RL (2020) · arXiv:2005.09220
 
 ### 2. Imitation gap의 정의와 모방·RL의 적응적 전환
-- [ ] ADVISOR: Bridging the Imitation Gap by Adaptive Insubordination (2020, NeurIPS 2021) · arXiv:2007.12173
+- [x] ADVISOR: Bridging the Imitation Gap by Adaptive Insubordination (2020, NeurIPS 2021) · arXiv:2007.12173 · [리뷰](https://hyunjikim12.github.io/paper-review/posts/2007.12173/)
 - [ ] A2D: Robust Asymmetric Learning in POMDPs (2020, ICML 2021) · arXiv:2012.15566
 - [ ] COSIL: Leveraging Fully Observable Policies for Learning under Partial Observability (2022, CoRL 2022) · arXiv:2211.01991
+- [ ] Impossibly Good Experts and How to Follow Them (2023, ICLR 2023) · OpenReview sciA_xgYofB
 - [ ] TGRL: Teacher Guided Reinforcement Learning (2023, ICML 2023) · arXiv:2307.03186
 
 ### 3. 학생을 고려한 교사 학습: 교사와 학생의 공동 학습, 학생 중심 전문가 설계
