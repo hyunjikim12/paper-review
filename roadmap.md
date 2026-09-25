@@ -272,3 +272,34 @@ latent 안에서 계획하고 불확실성을 다루는 연구 흐름.
 
 ### 6. 언제 증류하고 언제 직접 배우는가
 - [ ] To Distill or Decide? (2025, NeurIPS 2025) · arXiv:2510.03207
+
+## Trajectory Long-Tail 계보
+
+자율주행 궤적 예측(trajectory prediction)에서 드물지만 위험한 long-tail 장면을 정의하고,
+상호작용 구조를 모델링하거나 학습 데이터를 고르고 늘려 그 장면에서의 예측을 개선하는 연구 흐름.
+리뷰 순서는 위에서 아래로, 우선순위가 높은 논문을 각 갈래 앞에 두었다.
+
+### 1. Data-centric: 학습 데이터를 고르거나 늘려서 tail 대응
+- [ ] Den-TP (2024, CVPR 2026) · arXiv:2409.17385
+- [ ] GALTraj (2025, ICCV 2025) · arXiv:2507.22615
+- [ ] Critical Example Mining with Flow-based Generative Models (2024) · arXiv:2410.16083
+- [ ] Trajectory Entropy Maximization Data Pruning (2025) · arXiv:2512.19270
+
+### 2. 명시적 상호작용 구조: 상호작용 그래프와 조건부 분해
+- [ ] FJMP (2022, CVPR 2023) · arXiv:2211.16197
+- [ ] M2I (2022, CVPR 2022) · arXiv:2202.11884
+- [ ] GameFormer (2023, ICCV 2023) · arXiv:2303.05760
+- [ ] Density-Adaptive Model Based on Motif Matrix (2024, CVPR 2024) · CVF Open Access
+- [ ] Super Agents and Confounders (2026) · arXiv:2604.03463
+
+### 3. Long-tail 정의와 표현 학습: 어려운 샘플을 가르고 따로 배우기
+- [ ] AMD (2025, ICCV 2025) · arXiv:2507.01801
+- [ ] On Exposing the Challenging Long Tail in Future Prediction of Traffic Actors (2021, ICCV 2021) · arXiv:2103.12474
+- [ ] FEND (2023, CVPR 2023) · arXiv:2303.16574
+- [ ] TrACT (2024, IV 2024) · arXiv:2404.12538
+- [ ] SAML: Differentiable Semantic Meta-Learning (2025, AAAI 2026) · arXiv:2511.06649
+- [ ] SAIL (2026) · arXiv:2604.04573
+
+### 4. 기준 모델과 데이터셋
+- [ ] QCNet: Query-Centric Trajectory Prediction (2023, CVPR 2023) · CVF Open Access
+- [ ] Argoverse 2 (2023, NeurIPS 2021 Datasets and Benchmarks) · arXiv:2301.00493

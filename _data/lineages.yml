@@ -1,6 +1,8 @@
 # 홈 계보 탭의 순서와 이름. slug는 글 categories의 두 번째 값이고, 적힌 순서대로 탭이 놓인다.
 # 글이 하나도 없는 계보는 탭에 보이지 않는다.
 
+- slug: trajectory-long-tail
+  label: Trajectory
 - slug: latent-multi-agent
   label: Multi-Agent
 - slug: self-evolving-agent-skills
