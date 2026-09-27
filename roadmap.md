@@ -303,3 +303,57 @@ latent 안에서 계획하고 불확실성을 다루는 연구 흐름.
 ### 4. 기준 모델과 데이터셋
 - [ ] QCNet: Query-Centric Trajectory Prediction (2023, CVPR 2023) · CVF Open Access
 - [ ] Argoverse 2 (2023, NeurIPS 2021 Datasets and Benchmarks) · arXiv:2301.00493
+
+## Driving VLA 계보
+
+카메라 영상과 언어를 함께 다루는 VLM을 주행 정책에 결합해, 장면을 말로 설명하는 단계에서
+궤적을 직접 출력하고 그 전에 추론하는 단계까지 발전한 연구 흐름.
+갈래는 VLA4AD 서베이(arXiv:2506.24044)의 발전 단계를 따르고, 갈래별로 근본 논문 → 파생 논문 순이다.
+
+### 1. End-to-end 주행의 근본: 인식에서 계획까지 하나의 네트워크로
+- [ ] UniAD (2022, CVPR 2023) · arXiv:2212.10156
+- [ ] VAD (2023, ICCV 2023) · arXiv:2303.12077
+
+### 2. 설명자로서의 언어 모델: 장면과 판단을 말로 설명
+- [ ] DriveGPT4 (2023, RA-L) · arXiv:2310.01412
+- [ ] DriveLM (2023, ECCV 2024) · arXiv:2312.14150
+- [ ] GPT-Driver (2023) · arXiv:2310.01415
+- [ ] RAG-Driver (2024, RSS 2024) · arXiv:2402.10828
+
+### 3. 모듈형·이중 시스템 VLA: VLM의 판단을 planner가 궤적으로 변환
+- [ ] DriveVLM (2024, CoRL 2024) · arXiv:2402.12289
+- [ ] Senna (2024, IJCV) · arXiv:2410.22313
+- [ ] OpenDriveVLA (2025, AAAI 2026) · arXiv:2503.23463
+
+### 4. 통합 end-to-end VLA: 센서에서 궤적까지 하나의 모델
+- [ ] LMDrive (2023, CVPR 2024) · arXiv:2312.07488
+- [ ] EMMA (2024, TMLR) · arXiv:2410.23262
+- [ ] SimLingo (2025, CVPR 2025) · arXiv:2503.09594
+- [ ] NoRD: Drives without Reasoning (2026, CVPR 2026) · arXiv:2602.21172
+
+### 5. 추론 강화 VLA: CoT와 강화학습으로 행동 전에 추론
+- [ ] ORION (2025, ICCV 2025) · arXiv:2503.19755
+- [ ] AutoVLA (2025, NeurIPS 2025) · arXiv:2506.13757
+- [ ] Impromptu VLA (2025, NeurIPS 2025) · arXiv:2505.23757
+- [ ] ReCogDrive (2025) · arXiv:2506.08052
+- [ ] Alpamayo-R1 (2025) · arXiv:2511.00088
+
+### 6. 행동에 근거한 추론과 월드 모델: 텍스트 대신 미래 장면·잠재 표현으로 추론
+- [ ] FutureSightDrive (2025, NeurIPS 2025) · arXiv:2505.17685
+- [ ] IRL-VLA (2025) · arXiv:2508.06571
+- [ ] DriveVLA-W0 (2025) · arXiv:2510.12796
+- [ ] DriveWorld-VLA (2026) · arXiv:2602.06521
+- [ ] LaST-VLA (2026) · arXiv:2603.01928
+
+### 7. 평가 벤치마크
+- [ ] NAVSIM (2024, NeurIPS 2024 D&B) · arXiv:2406.15349
+- [ ] Bench2Drive (2024, NeurIPS 2024 D&B) · arXiv:2406.03877
+- [ ] Pseudo-Simulation (NAVSIM v2) (2025, CoRL 2025) · arXiv:2506.04218
+- [ ] WOD-E2E (2025) · arXiv:2510.26125
+
+### 참고 서베이 (리뷰 대상 아님)
+- End-to-end Autonomous Driving: Challenges and Frontiers (2023, TPAMI) · arXiv:2306.16927
+- A Survey on VLA Models for Autonomous Driving (2025, ICCV 2025 Workshops) · arXiv:2506.24044
+- VLA Models for Autonomous Driving: Past, Present, and Future (2025) · arXiv:2512.16760
+- A Survey of World Models for Autonomous Driving (2025) · arXiv:2501.11260
+- Beyond Textual Chain-of-Thought (2026, EMNLP 2026) · arXiv:2609.01659

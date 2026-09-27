@@ -3,6 +3,8 @@
 
 - slug: trajectory-long-tail
   label: Trajectory
+- slug: driving-vla
+  label: Driving VLA
 - slug: latent-multi-agent
   label: Multi-Agent
 - slug: self-evolving-agent-skills
