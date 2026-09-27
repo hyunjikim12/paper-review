@@ -280,7 +280,7 @@ latent 안에서 계획하고 불확실성을 다루는 연구 흐름.
 리뷰 순서는 위에서 아래로, 우선순위가 높은 논문을 각 갈래 앞에 두었다.
 
 ### 1. Data-centric: 학습 데이터를 고르거나 늘려서 tail 대응
-- [ ] Den-TP (2024, CVPR 2026) · arXiv:2409.17385
+- [x] Den-TP (2024, CVPR 2026) · arXiv:2409.17385 · [리뷰](https://hyunjikim12.github.io/paper-review/posts/2409.17385/)
 - [ ] GALTraj (2025, ICCV 2025) · arXiv:2507.22615
 - [ ] Critical Example Mining with Flow-based Generative Models (2024) · arXiv:2410.16083
 - [ ] Trajectory Entropy Maximization Data Pruning (2025) · arXiv:2512.19270
