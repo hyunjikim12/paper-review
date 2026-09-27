@@ -357,3 +357,77 @@ latent 안에서 계획하고 불확실성을 다루는 연구 흐름.
 - VLA Models for Autonomous Driving: Past, Present, and Future (2025) · arXiv:2512.16760
 - A Survey of World Models for Autonomous Driving (2025) · arXiv:2501.11260
 - Beyond Textual Chain-of-Thought (2026, EMNLP 2026) · arXiv:2609.01659
+
+## Surgical Robot Safety 계보
+
+수술 로봇의 모방학습 정책이 실행 중에 실패하는 순간을 감지하고, 월드 모델과 시뮬레이터로 정책을 학습·평가해
+수술 자율화의 안전성을 확보하는 연구 흐름.
+리뷰 순서는 위에서 아래로, 우선순위가 높은 논문을 각 갈래 앞에 두었다.
+
+### 1. 실행 중 실패 감지: 정책이 실패하는 순간을 잡아냄
+- [ ] FoMo-FD: Failure Detection for Surgical Robot Imitation Policies via Flow-Matching World Modeling (2026) · arXiv:2607.27511
+- [ ] SAFE: Multitask Failure Detection for Vision-Language-Action Models (2025, NeurIPS 2025) · arXiv:2506.09937
+- [ ] FIPER: Failure Prediction at Runtime for Generative Robot Policies (2025, NeurIPS 2025) · arXiv:2510.09459
+- [ ] Foundational World Models Accurately Detect Bimanual Manipulator Failures (2026, ICRA 2026) · arXiv:2603.06987
+- [ ] FAIL-Detect: Can We Detect Failures Without Failure Data? (2025, RSS 2025) · arXiv:2503.08558
+- [ ] Sentinel: Unpacking Failure Modes of Generative Policies (2024, CoRL 2024) · arXiv:2410.04640
+- [ ] RC-NF (2026, CVPR 2026) · arXiv:2603.11106
+- [ ] Early Failure Detection in Autonomous Surgical Soft-Tissue Manipulation via Uncertainty Quantification (2025, RSS 2025 Workshop) · arXiv:2501.10561
+- [ ] FailSafe: Reasoning and Recovery from Failures in VLA Models (2025, IROS 2026) · arXiv:2510.01642
+- [ ] FailBench: How Reliable are VLMs at Judging Robot Task Success? (2026) · arXiv:2609.03611
+
+### 2. 수술 안전 감지와 오류 검출
+- [ ] Real-Time Context-Aware Detection of Unsafe Events in Robot-Assisted Surgery (2020, DSN 2020) · arXiv:2005.03611
+- [ ] Runtime Detection of Executional Errors in Robot-Assisted Surgery (2022, ICRA 2022) · arXiv:2203.00737
+- [ ] SEDCLIP: Adapting VLM for Multi-Label Surgical Error Detection (2026, Medical Image Analysis 2026) · DOI 10.1016/j.media.2026.104276
+
+### 3. 수술 로봇 모방학습과 시뮬레이션
+- [ ] ORBIT-Surgical (2024, ICRA 2024) · arXiv:2404.16027
+- [ ] SRT: Surgical Robot Transformer (2024, CoRL 2024) · arXiv:2407.12998
+- [ ] Imitation Learning for Robot Assistance in Open Surgery: A Multi-Policy Evaluation on Suture Following (2026) · arXiv:2605.28736
+- [ ] FF-SRL (2025, IROS 2024) · arXiv:2503.18616
+- [ ] SurRoL (2021, IROS 2021) · arXiv:2108.13035
+- [ ] Supervised Mixture-of-Experts for Surgical Grasping and Retraction (MoE-ACT) (2026, RSS 2026) · arXiv:2601.21971
+- [ ] Surgical Embodied Intelligence for Generalized Task Autonomy in Laparoscopic RAS (2025, Science Robotics 2025) · DOI 10.1126/scirobotics.adt3093
+- [ ] SRT-H (2025, Science Robotics 2025) · arXiv:2505.10251
+- [ ] LapGym (2023, JMLR 2023) · arXiv:2302.09606
+- [ ] SutureBot (2025, NeurIPS 2025) · arXiv:2510.20965
+
+### 4. 일반 로봇 정책 배경
+- [ ] ACT/ALOHA: Learning Fine-Grained Bimanual Manipulation with Low-Cost Hardware (2023, RSS 2023) · arXiv:2304.13705
+- [ ] Diffusion Policy (2023, RSS 2023) · arXiv:2303.04137
+- [ ] SmolVLA (2025) · arXiv:2506.01844
+
+### 5. 월드 모델 기반 정책 평가
+- [ ] Ctrl-World (2025, ICLR 2026) · arXiv:2510.10125
+- [ ] WorldGym (2025, ICLR 2026) · arXiv:2506.00613
+- [ ] Open-H-Embodiment (2026) · arXiv:2604.21017
+- [ ] RoboWM-Bench (2026, CVPR 2026 Workshop) · arXiv:2604.19092
+- [ ] UniSim: Learning Interactive Real-World Simulators (2023, ICLR 2024) · arXiv:2310.06114
+- [ ] WorldEval (2025) · arXiv:2505.19017
+
+### 6. 분야 관점
+- [ ] General-Purpose Foundation Models for Increased Autonomy in Robot-Assisted Surgery (2024, Nature Machine Intelligence 2024) · arXiv:2401.00678
+
+## Surgical Video VLM 계보
+
+수술·의료 영상을 이해하는 VLM을 GRPO 같은 강화학습으로 학습하고, 수술 영상 이해의 과제와 데이터를 정리하는 연구 흐름.
+리뷰 순서는 위에서 아래로, 우선순위가 높은 논문을 각 갈래 앞에 두었다.
+
+### 1. 강화학습으로 학습하는 의료·수술 영상 VLM
+- [ ] MedGRPO (2025, CVPR 2026) · arXiv:2512.06581
+- [ ] Surgery-R1 (2025) · arXiv:2506.19469
+- [ ] Video-R1 (2025, NeurIPS 2025) · arXiv:2503.21776
+
+### 2. GRPO와 검증 가능한 보상 기반 RL
+- [ ] DeepSeekMath (2024) · arXiv:2402.03300
+- [ ] DeepSeek-R1 (2025, Nature 2025) · arXiv:2501.12948
+- [ ] DAPO (2025) · arXiv:2503.14476
+
+### 3. 수술 영상 이해의 과제와 데이터
+- [ ] Rendezvous (2021, Medical Image Analysis 2022) · arXiv:2109.03223
+- [ ] CholecTriplet2021 (2022, Medical Image Analysis 2023) · arXiv:2204.04746
+- [ ] SurgPub-Video (2025, AAAI 2026) · arXiv:2508.10054
+- [ ] SurgGraph (2026) · arXiv:2609.25651
+- [ ] SurgVLP (2023, Medical Image Analysis 2025) · arXiv:2307.15220
+- [ ] Surgical-VQA (2022, MICCAI 2022) · arXiv:2206.11053
