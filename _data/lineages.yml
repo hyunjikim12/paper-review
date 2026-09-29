@@ -8,6 +8,8 @@
   label: Surgical VLM
 - slug: surgical-world-model   # 도메인
   label: Surgical WM
+- slug: world-action-model
+  label: WAM
 - slug: trajectory-long-tail
   label: Trajectory
 - slug: driving-vla

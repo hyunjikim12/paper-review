@@ -237,6 +237,7 @@ latent 안에서 계획하고 불확실성을 다루는 연구 흐름.
 - [ ] A Path Towards Autonomous Machine Intelligence (2022) · OpenReview BZ5a1r-kVsf
 - [ ] I-JEPA (2023, CVPR 2023) · arXiv:2301.08243
 - [ ] V-JEPA (2024) · arXiv:2404.08471
+- [ ] V-JEPA 2.1: Unlocking Dense Features in Video Self-Supervised Learning (2026) · arXiv:2603.14482
 - [ ] VICReg (2021, ICLR 2022) · arXiv:2105.04906
 
 ### 7. 재구성 기반 latent 월드 모델: latent 계획의 원형과 수술 적용
@@ -245,6 +246,9 @@ latent 안에서 계획하고 불확실성을 다루는 연구 흐름.
 - [ ] GAS: World Models for General Surgical Grasping (2024, RSS 2024) · arXiv:2405.17940 · 탭: Surgical WM
 - [ ] Visuomotor Grasping with World Models for Surgical Robots (2025) · arXiv:2508.11200 · 탭: Surgical WM
 - [ ] S2-HWM: Sparse Event-Structured Hierarchical World Model (2026) · arXiv:2608.13103 · 탭: Surgical WM
+
+### 8. JEPA 인코더의 수술 도메인 사전학습
+- [ ] OmniRAS: Standardizing Foundation Model Training and Evaluation in Robot-Assisted Surgery (2026) · arXiv:2608.31048
 
 ## Imitation Gap 계보
 
@@ -406,6 +410,7 @@ latent 안에서 계획하고 불확실성을 다루는 연구 흐름.
 - [ ] SRT-H (2025, Science Robotics 2025) · arXiv:2505.10251
 - [ ] LapGym (2023, JMLR 2023) · arXiv:2302.09606
 - [ ] SutureBot (2025, NeurIPS 2025) · arXiv:2510.20965
+- [ ] SurgVIL: Scaling Surgical Robot Imitation Learning with Open-source Surgical Videos (2026) · arXiv:2608.16058
 - [ ] dVRK: An Open-Source Research Kit for the da Vinci Surgical System (2014, ICRA 2014) · DOI 10.1109/ICRA.2014.6907809
 - [ ] JIGSAWS: JHU-ISI Gesture and Skill Assessment Working Set (2014, MICCAI 2014 M2CAI Workshop)
 
@@ -424,13 +429,9 @@ latent 안에서 계획하고 불확실성을 다루는 연구 흐름.
 - [ ] UniSim: Learning Interactive Real-World Simulators (2023, ICLR 2024) · arXiv:2310.06114
 - [ ] WorldEval (2025) · arXiv:2505.19017
 
-### 6. 생성형 수술 월드 모델: 행동 조건 영상 생성으로 정책 학습·시뮬레이션
-- [ ] Surgical Vision World Model (2025, MICCAI 2025 Workshop) · arXiv:2503.02904 · 탭: Surgical WM
-- [ ] Cosmos-H-Surgical (SurgWorld) (2025) · arXiv:2512.23162 · 탭: Surgical WM
-- [ ] SurgVista (2026) · arXiv:2606.19889 · 탭: Surgical WM
-- [ ] Cosmos-H-Dreams (2026) · arXiv:2608.24199 · 탭: Surgical WM
+- 생성형 수술 월드 모델 (Surgical Vision World Model, Cosmos-H-Surgical, SurgVista, Cosmos-H-Dreams, KVLR) → World-Action Model 계보
 
-### 7. 분야 관점
+### 6. 분야 관점
 - [ ] A Decade Retrospective of Medical Robotics Research from 2010 to 2020 (2021, Science Robotics 2021) · DOI 10.1126/scirobotics.abi8017
 - [ ] General-Purpose Foundation Models for Increased Autonomy in Robot-Assisted Surgery (2024, Nature Machine Intelligence 2024) · arXiv:2401.00678
 
@@ -455,4 +456,29 @@ latent 안에서 계획하고 불확실성을 다루는 연구 흐름.
 - [ ] SurgPub-Video (2025, AAAI 2026) · arXiv:2508.10054
 - [ ] SurgGraph (2026) · arXiv:2609.25651
 - [ ] SurgVLP (2023, Medical Image Analysis 2025) · arXiv:2307.15220
+- [ ] SurgVISTA: Large-scale Self-supervised Video Foundation Model for Intelligent Surgery (2025, npj Digital Medicine 2026) · arXiv:2506.02692
+- [ ] Surg-3M / SurgFM: A Dataset and Foundation Model for Perception in Surgical Settings (2025) · arXiv:2503.19740
 - [ ] Surgical-VQA (2022, MICCAI 2022) · arXiv:2206.11053
+
+## World-Action Model 계보
+
+미래 관측(영상)과 실행 가능한 행동을 하나의 생성 모델이 함께 예측하거나, 행동을 조건으로 미래 영상을 생성해
+정책·월드 모델·시뮬레이터 역할을 한 모델로 통합하는 연구 흐름.
+리뷰 순서는 위에서 아래로, 갈래별로 근본 논문 → 파생 논문 순이다.
+
+### 1. 근본: 영상 예측과 행동 생성의 통합
+- [ ] Unified Video Action Model (UVA) (2025) · arXiv:2503.00200
+- [ ] Cosmos Policy: Fine-Tuning Video Models for Visuomotor Control and Planning (2026) · arXiv:2601.16163
+- [ ] LingBot-VA: Causal World Modeling for Robot Control (2026, RSS 2026) · arXiv:2601.21998
+
+### 2. 행동 조건 영상 생성: 행동을 입력받아 미래 수술 영상을 생성해 정책 학습·시뮬레이션에 활용
+- [ ] Surgical Vision World Model (2025, MICCAI 2025 Workshop) · arXiv:2503.02904 · 탭: Surgical WM
+- [ ] Cosmos-H-Surgical (SurgWorld) (2025) · arXiv:2512.23162 · 탭: Surgical WM
+- [ ] KVLR: From Articulated Kinematics to Routed Visual Control for Action-Conditioned Surgical Video Generation (2026, NeurIPS 2026) · arXiv:2605.08712 · 탭: Surgical WM
+- [ ] SurgVista: Long-Horizon Surgical World Modeling (2026) · arXiv:2606.19889 · 탭: Surgical WM
+- [ ] Cosmos-H-Dreams (2026) · arXiv:2608.24199 · 탭: Surgical WM
+
+### 3. 수술 WAM: 내시경 영상과 수술 로봇 행동의 공동 예측
+- [ ] Surgical WAM: A World-Action Model for Data-Efficient Surgical Robot Learning (2026) · arXiv:2608.11204 · 탭: Surgical WM
+- [ ] Towards Surgical World-Action Modeling (2026) · arXiv:2608.20284 · 탭: Surgical WM
+- [ ] EndoWAM: A Grounded World-Action Model for Generalizable Endoscopic Navigation (2026) · arXiv:2608.01221 · 탭: Surgical WM
