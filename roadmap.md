@@ -378,7 +378,7 @@ latent 안에서 계획하고 불확실성을 다루는 연구 흐름.
 리뷰 순서는 위에서 아래로, 우선순위가 높은 논문을 각 갈래 앞에 두었다.
 
 ### 1. 실행 중 실패 감지: 정책이 실패하는 순간을 잡아냄
-- [ ] FoMo-FD: Failure Detection for Surgical Robot Imitation Policies via Flow-Matching World Modeling (2026) · arXiv:2607.27511 · 탭: Surgical WM
+- [x] FoMo-FD: Failure Detection for Surgical Robot Imitation Policies via Flow-Matching World Modeling (2026) · arXiv:2607.27511 · 탭: Surgical WM · [리뷰](https://hyunjikim12.github.io/paper-review/posts/2607.27511/)
 - [ ] SAFE: Multitask Failure Detection for Vision-Language-Action Models (2025, NeurIPS 2025) · arXiv:2506.09937
 - [ ] FIPER: Failure Prediction at Runtime for Generative Robot Policies (2025, NeurIPS 2025) · arXiv:2510.09459
 - [ ] Foundational World Models Accurately Detect Bimanual Manipulator Failures (2026, ICRA 2026) · arXiv:2603.06987
