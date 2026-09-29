@@ -216,7 +216,7 @@ latent 안에서 계획하고 불확실성을 다루는 연구 흐름.
 
 ### 2. 픽셀에서 end-to-end로 안정 학습: 붕괴 없는 단일 목적 함수
 - [ ] LeJEPA (2025) · arXiv:2511.08544
-- [ ] LeWorldModel (2026) · arXiv:2603.19312
+- [x] LeWorldModel (2026) · arXiv:2603.19312 · [리뷰](https://hyunjikim12.github.io/paper-review/posts/2603.19312/)
 - [ ] UniJEPA (2026) · arXiv:2608.07409
 
 ### 3. 확률적·믿음 상태 JEPA: 미래 latent의 분포와 불확실성
