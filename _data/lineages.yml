@@ -1,10 +1,13 @@
 # 홈 계보 탭의 순서와 이름. slug는 글 categories의 두 번째 값이고, 적힌 순서대로 탭이 놓인다.
 # 글이 하나도 없는 계보는 탭에 보이지 않는다.
+# 도메인 탭(roadmap 섹션 없이 글의 front matter lineages로만 채우는 탭)은 끝에 "# 도메인"을 단다.
 
 - slug: surgical-robot-safety
   label: Surgical Robot
 - slug: surgical-video-vlm
   label: Surgical VLM
+- slug: surgical-world-model   # 도메인
+  label: Surgical WM
 - slug: trajectory-long-tail
   label: Trajectory
 - slug: driving-vla

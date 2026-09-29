@@ -142,8 +142,8 @@ MLLM/VLM에 들어가는 많은 시각 토큰 중 일부만 남겨 추론 비용
 리뷰 순서는 위에서 아래로, 갈래별로 근본 논문 → 파생 논문 순이다.
 
 ### 1. JEPA 근본: 입력 대신 latent를 예측
-- [ ] I-JEPA (2023, CVPR 2023) · arXiv:2301.08243
-- [ ] V-JEPA (2024) · arXiv:2404.08471
+- I-JEPA (2023, CVPR 2023) → JEPA World Model 계보
+- V-JEPA (2024) → JEPA World Model 계보
 - [ ] Var-JEPA (2026, ICML 2026) · arXiv:2603.20111
 - [x] UWM-JEPA (2026) · arXiv:2605.25313 · [리뷰](https://hyunjikim12.github.io/paper-review/posts/2605.25313/)
 
@@ -221,7 +221,7 @@ latent 안에서 계획하고 불확실성을 다루는 연구 흐름.
 
 ### 3. 확률적·믿음 상태 JEPA: 미래 latent의 분포와 불확실성
 - [ ] VJEPA: Variational JEPA as Probabilistic World Models (2026) · arXiv:2601.14354
-- [x] UWM-JEPA (2026) · arXiv:2605.25313 · [리뷰](https://hyunjikim12.github.io/paper-review/posts/2605.25313/)
+- UWM-JEPA (2026) → Missing Modality Latent Prediction 계보
 - [ ] Branch-JEPA: Finite-Support Predictive Distributions (2026) · arXiv:2607.05238
 
 ### 4. 행동 결합과 시험 시 적응: 예측기가 행동과 경험에 반응하게 만들기
@@ -232,6 +232,19 @@ latent 안에서 계획하고 불확실성을 다루는 연구 흐름.
 - [ ] When Does LeJEPA Learn a World Model? (2026) · arXiv:2605.26379
 - [ ] A Generalization Theory for JEPA-Based World Models (2026) · arXiv:2606.27014
 - [ ] UR-JEPA: Uniform Rectifiability as a Regularizer (2026) · arXiv:2606.01443
+
+### 6. JEPA의 철학과 붕괴 방지: 픽셀 대신 표현을 예측하는 이유
+- [ ] A Path Towards Autonomous Machine Intelligence (2022) · OpenReview BZ5a1r-kVsf
+- [ ] I-JEPA (2023, CVPR 2023) · arXiv:2301.08243
+- [ ] V-JEPA (2024) · arXiv:2404.08471
+- [ ] VICReg (2021, ICLR 2022) · arXiv:2105.04906
+
+### 7. 재구성 기반 latent 월드 모델: latent 계획의 원형과 수술 적용
+- [ ] PlaNet: Learning Latent Dynamics for Planning from Pixels (2018, ICML 2019) · arXiv:1811.04551
+- [ ] DreamerV3 (2023, Nature 2025) · arXiv:2301.04104
+- [ ] GAS: World Models for General Surgical Grasping (2024, RSS 2024) · arXiv:2405.17940 · 탭: Surgical WM
+- [ ] Visuomotor Grasping with World Models for Surgical Robots (2025) · arXiv:2508.11200 · 탭: Surgical WM
+- [ ] S2-HWM: Sparse Event-Structured Hierarchical World Model (2026) · arXiv:2608.13103 · 탭: Surgical WM
 
 ## Imitation Gap 계보
 
@@ -365,7 +378,7 @@ latent 안에서 계획하고 불확실성을 다루는 연구 흐름.
 리뷰 순서는 위에서 아래로, 우선순위가 높은 논문을 각 갈래 앞에 두었다.
 
 ### 1. 실행 중 실패 감지: 정책이 실패하는 순간을 잡아냄
-- [ ] FoMo-FD: Failure Detection for Surgical Robot Imitation Policies via Flow-Matching World Modeling (2026) · arXiv:2607.27511
+- [ ] FoMo-FD: Failure Detection for Surgical Robot Imitation Policies via Flow-Matching World Modeling (2026) · arXiv:2607.27511 · 탭: Surgical WM
 - [ ] SAFE: Multitask Failure Detection for Vision-Language-Action Models (2025, NeurIPS 2025) · arXiv:2506.09937
 - [ ] FIPER: Failure Prediction at Runtime for Generative Robot Policies (2025, NeurIPS 2025) · arXiv:2510.09459
 - [ ] Foundational World Models Accurately Detect Bimanual Manipulator Failures (2026, ICRA 2026) · arXiv:2603.06987
@@ -381,7 +394,7 @@ latent 안에서 계획하고 불확실성을 다루는 연구 흐름.
 - [ ] Runtime Detection of Executional Errors in Robot-Assisted Surgery (2022, ICRA 2022) · arXiv:2203.00737
 - [ ] SEDCLIP: Adapting VLM for Multi-Label Surgical Error Detection (2026, Medical Image Analysis 2026) · DOI 10.1016/j.media.2026.104276
 
-### 3. 수술 로봇 모방학습과 시뮬레이션
+### 3. 수술 로봇 모방학습, 시뮬레이션, 플랫폼
 - [ ] ORBIT-Surgical (2024, ICRA 2024) · arXiv:2404.16027
 - [ ] SRT: Surgical Robot Transformer (2024, CoRL 2024) · arXiv:2407.12998
 - [ ] Imitation Learning for Robot Assistance in Open Surgery: A Multi-Policy Evaluation on Suture Following (2026) · arXiv:2605.28736
@@ -392,6 +405,8 @@ latent 안에서 계획하고 불확실성을 다루는 연구 흐름.
 - [ ] SRT-H (2025, Science Robotics 2025) · arXiv:2505.10251
 - [ ] LapGym (2023, JMLR 2023) · arXiv:2302.09606
 - [ ] SutureBot (2025, NeurIPS 2025) · arXiv:2510.20965
+- [ ] dVRK: An Open-Source Research Kit for the da Vinci Surgical System (2014, ICRA 2014) · DOI 10.1109/ICRA.2014.6907809
+- [ ] JIGSAWS: JHU-ISI Gesture and Skill Assessment Working Set (2014, MICCAI 2014 M2CAI Workshop)
 
 ### 4. 일반 로봇 정책 배경
 - [ ] ACT/ALOHA: Learning Fine-Grained Bimanual Manipulation with Low-Cost Hardware (2023, RSS 2023) · arXiv:2304.13705
@@ -399,6 +414,8 @@ latent 안에서 계획하고 불확실성을 다루는 연구 흐름.
 - [ ] SmolVLA (2025) · arXiv:2506.01844
 
 ### 5. 월드 모델 기반 정책 평가
+- [ ] Cosmos-Surg-dVRK (2025, RA-L 2025) · arXiv:2510.16240 · 탭: Surgical WM
+- [ ] SurgWMBench (2026) · arXiv:2608.08070 · 탭: Surgical WM
 - [ ] Ctrl-World (2025, ICLR 2026) · arXiv:2510.10125
 - [ ] WorldGym (2025, ICLR 2026) · arXiv:2506.00613
 - [ ] Open-H-Embodiment (2026) · arXiv:2604.21017
@@ -406,7 +423,14 @@ latent 안에서 계획하고 불확실성을 다루는 연구 흐름.
 - [ ] UniSim: Learning Interactive Real-World Simulators (2023, ICLR 2024) · arXiv:2310.06114
 - [ ] WorldEval (2025) · arXiv:2505.19017
 
-### 6. 분야 관점
+### 6. 생성형 수술 월드 모델: 행동 조건 영상 생성으로 정책 학습·시뮬레이션
+- [ ] Surgical Vision World Model (2025, MICCAI 2025 Workshop) · arXiv:2503.02904 · 탭: Surgical WM
+- [ ] Cosmos-H-Surgical (SurgWorld) (2025) · arXiv:2512.23162 · 탭: Surgical WM
+- [ ] SurgVista (2026) · arXiv:2606.19889 · 탭: Surgical WM
+- [ ] Cosmos-H-Dreams (2026) · arXiv:2608.24199 · 탭: Surgical WM
+
+### 7. 분야 관점
+- [ ] A Decade Retrospective of Medical Robotics Research from 2010 to 2020 (2021, Science Robotics 2021) · DOI 10.1126/scirobotics.abi8017
 - [ ] General-Purpose Foundation Models for Increased Autonomy in Robot-Assisted Surgery (2024, Nature Machine Intelligence 2024) · arXiv:2401.00678
 
 ## Surgical Video VLM 계보
