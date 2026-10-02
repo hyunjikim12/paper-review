@@ -248,7 +248,7 @@ latent 안에서 계획하고 불확실성을 다루는 연구 흐름.
 - [ ] S2-HWM: Sparse Event-Structured Hierarchical World Model (2026) · arXiv:2608.13103 · 탭: Surgical WM
 
 ### 8. JEPA 인코더의 수술 도메인 사전학습
-- [ ] OmniRAS: Standardizing Foundation Model Training and Evaluation in Robot-Assisted Surgery (2026) · arXiv:2608.31048
+- [x] OmniRAS: Standardizing Foundation Model Training and Evaluation in Robot-Assisted Surgery (2026) · arXiv:2608.31048 · 탭: Surgical WM · [리뷰](https://hyunjikim12.github.io/paper-review/posts/2608.31048/)
 
 ## Imitation Gap 계보
 
