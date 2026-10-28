@@ -114,6 +114,7 @@ MLLM/VLM에 들어가는 많은 시각 토큰 중 일부만 남겨 추론 비용
 - [ ] Med-VCD (2025, Computers in Biology and Medicine 2026) · arXiv:2512.01922
 - [x] ARCD (2025, AAAI 2026) · arXiv:2512.17189 · [리뷰](https://hyunjikim12.github.io/paper-review/posts/2512.17189/)
 - [ ] CAST (2026, MICCAI 2026) · arXiv:2608.17427
+- [x] Same Attention, Different Truths (2026, CVPR 2026) · CVF Open Access · [리뷰](https://hyunjikim12.github.io/paper-review/posts/sadt/)
 
 ### 4. 검색 증강(RAG): 외부 지식으로 사실성 보강
 - [ ] RULE (2024, EMNLP 2024) · arXiv:2407.05131
