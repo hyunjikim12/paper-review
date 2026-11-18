@@ -483,3 +483,20 @@ latent 안에서 계획하고 불확실성을 다루는 연구 흐름.
 - [ ] Surgical WAM: A World-Action Model for Data-Efficient Surgical Robot Learning (2026) · arXiv:2608.11204 · 탭: Surgical WM
 - [ ] Towards Surgical World-Action Modeling (2026) · arXiv:2608.20284 · 탭: Surgical WM
 - [ ] EndoWAM: A Grounded World-Action Model for Generalizable Endoscopic Navigation (2026) · arXiv:2608.01221 · 탭: Surgical WM
+
+## Knowledge Editing 계보
+
+언어 모델의 사실 지식이 저장된 위치를 찾아 그 가중치를 직접 고치는 연구 흐름(locate-then-edit)과, 이를 새 모델 계열로 옮기는 연구.
+리뷰 순서는 위에서 아래로, 갈래별로 근본 논문 → 파생 논문 순이다.
+
+### 1. Locate-then-edit 근본: 사실 회상의 위치 추적과 편집
+- [ ] ROME: Locating and Editing Factual Associations in GPT (2022, NeurIPS 2022) · arXiv:2202.05262
+- [ ] MEMIT: Mass-Editing Memory in a Transformer (2022, ICLR 2023) · arXiv:2210.07229
+- [ ] Does Localization Inform Editing? (2023, NeurIPS 2023) · arXiv:2301.04213
+
+### 2. 편집 갱신의 정교화: 잔차 최적화와 보존 제약
+- [ ] PMET: Precise Model Editing in a Transformer (2023, AAAI 2024) · arXiv:2308.08742
+- [ ] AlphaEdit: Null-Space Constrained Knowledge Editing for Language Models (2024, ICLR 2025) · arXiv:2410.02355
+
+### 3. 새 모델 계열로의 이전
+- [x] Knowledge Editing for Masked Diffusion Language Models (2026, EMNLP 2026) · arXiv:2606.03924 · [리뷰](https://hyunjikim12.github.io/paper-review/posts/2606.03924/)

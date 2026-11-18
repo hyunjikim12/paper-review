@@ -30,3 +30,5 @@
   label: Hallucination
 - slug: pathology-agent
   label: Pathology
+- slug: knowledge-editing
+  label: Knowledge Editing
