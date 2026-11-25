@@ -412,6 +412,7 @@ latent 안에서 계획하고 불확실성을 다루는 연구 흐름.
 - [ ] SRT-H (2025, Science Robotics 2025) · arXiv:2505.10251
 - [ ] LapGym (2023, JMLR 2023) · arXiv:2302.09606
 - [x] SutureBot (2025, NeurIPS 2025) · arXiv:2510.20965 · [리뷰](https://hyunjikim12.github.io/paper-review/posts/2510.20965/)
+- [ ] Reeling It In: Flexible Needle Pick Up via Thread Manipulation for Autonomous Suturing (2026) · arXiv:2607.26337
 - [ ] SurgVIL: Scaling Surgical Robot Imitation Learning with Open-source Surgical Videos (2026) · arXiv:2608.16058
 - [ ] dVRK: An Open-Source Research Kit for the da Vinci Surgical System (2014, ICRA 2014) · DOI 10.1109/ICRA.2014.6907809
 - [ ] JIGSAWS: JHU-ISI Gesture and Skill Assessment Working Set (2014, MICCAI 2014 M2CAI Workshop)
